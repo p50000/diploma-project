@@ -1,0 +1,14 @@
+Title: Free Scoped Monads with Efficient Type-Safe Capture-Avoiding Substitution in Haskell
+CONTEXT: In a programming language, expressions with scopes require safe substitution which avoids name capture.
+To avoid name capture, different syntax encodings use multiple capture-avoiding substitution approaches,
+such as intrinsic scoping with De Brujn indices or type-safe cutting edge technique.
+This research examines an approach for syntax representation which allows generating object languages freely using bifunctors and considers the benefits of type-safe and stateless capture-avoiding substitution technique in relation to it.
+AIM: This study investigates whether type-safe, fast and stateless technique can be applied to free scoped monads syntax representation and increases the efficiency of this approach.
+It implements such technique for free scoped monads, providing a properly working implementation.
+METHOD: We studied and implemented capture-avoiding substitution using approach which is stateless and requires Haskell's type-checker to enforce safety restrictions.
+We adapted such substitution technique for syntax representation with free scoped monads and wrote an implementation of it in Haskell for lambda calculus.
+We tested this realization and compared its correctness and efficiency by running benchmark evaluations on it.
+RESULTS: The newly devised implementation of capture-avoiding substitution was correct and passed all the tests. The benchmark tests have shown that this implementation outperformed the existing capture-avoiding techniques that rely on free scoped monads. What's more, this implementation did not introduce any additional run-time overhead compared to other existing implementations.
+CONCLUSIONS: This research provided new type-safe approach for syntax representation using free monads and stateless technique of capture avoiding substituion,
+which was applied to lambda calculus and can be further developed for other languages.
+This implementation improved existing solutions for capture-avoiding substitution, offering a universal and efficient approach.
